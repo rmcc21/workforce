@@ -1,0 +1,12 @@
+GET http://localhost:8087/employee
+Accept: application/json
+
+###
+PUT http://localhost:8087/employee
+Content-Type: application/json
+
+{
+
+  "idPerson": "por allí klk",
+  "active": true
+}
