@@ -3,9 +3,9 @@ package gov.mendoza.salud.hvt.workforce.employee
 import io.micronaut.context.annotation.Prototype
 import javax.inject.Inject
 
-@Prototype
-class EmployeeService {
-    @Inject lateinit var employeeRepository: EmployeeRepository
+
+abstract class EmployeeService {
+    open lateinit var employeeRepository: EmployeeRepository
 
     fun save(employee: Employee) {
         employeeRepository.save(employee)
